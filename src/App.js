@@ -1,21 +1,29 @@
-import React from 'react';
-import './App.css'
-import Cards from './components/Cards';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import Services from './components/Services';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./component/Home";
+import Create from "./component/Create";
+import Update from "./component/Update";
+import PDelete from "./component/PDelete";
+import Read from "./component/Read";
+import Pop from "./component/Pop";
 
-const App = () => {
-    return (
-        <>
-            <Navbar/>
-            <Services/>
-            <Cards/>
-            <Contact/>
-            <Footer/>
-        </>
-    );
-};
+function App() {
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/create" element={<Create />} />
+          <Route path="/update/:id" element={<Update/>}/>
+          <Route path="/delete/:id" element={<PDelete/>}/>
+          <Route path="/read/:id" element={<Read/>}/>
+        </Routes>
+      </BrowserRouter>
+      {/* <Pop/> */}
+
+    </div>
+  );
+}
+
 
 export default App;

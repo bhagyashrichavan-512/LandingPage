@@ -1,269 +1,38 @@
-h1 h2 h3 h4 h5 {
-    color: white
-}
-h1{
-    margin-bottom: 0rem!important;
-}
-h3{
-    font-size: 1rem!important;
-}
-*, ::after, ::before{
-    box-sizing: content-box!important;
-}
-a{
-    text-decoration: none!important;
-    color: white!important;
-}
-/* search Sec */
-.inline {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.App {
+  text-align: center;
 }
 
-.inline input {
-    height: 4rem;
-    width: 500px;
-    color: black;
-    font-size: 19px;
-    outline: none;
-    border: none;
-    font-family: 'Times New Roman', Times, serif;
-    padding-left: 1rem;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.inline button {
-    height: 4rem;
-    color: white;
-    background-color: #cd96ff;
-    font-size: 25px;
-    cursor: pointer;
-    width: 170px;
-    outline: none;
-    border: none;
-    font-family: 'Times New Roman', Times, serif;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.inline button:hover {
-    background: transparent;
-    border: 1px solid white;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-/* services sec */
-.services {
-    background-color: black;
+.App-link {
+  color: #61dafb;
 }
 
-.contentS {
-    color: white;
-    font-weight: 100;
-    width: 50%;
-}
-
-.servicCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20rem;
-    /* padding-top: 2rem; */
-    padding-bottom: 1rem;
-    margin: 0 auto;
-    gap: 1.5rem;
-}
-
-.servicCard img {
-    width: 30%;
-    height: 80%;
-}
-
-.fadUp > div {
-    transition: 1s;
-    position: relative;
-    /* height: 50px; */
-    top: 100px;
-    /* transition-timing-function: cubic-bezier(1, -0.61, 0, 1.92); */
-}
-
-/* contact sec */
-.err {
-    color: #ff9696;
-    margin-left: 0.5rem;
-    margin-bottom: 1rem;
-    margin-top: -0.5rem;
-}
-
-.thanks {
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 0.5rem;
-}
-
-.contactMain {
-    background-color: black;
-    width: 100%;
-}
-
-.midCont {
-    /* background-color: black; */
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    /* height: 20rem; */
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-}
-
-.contact input {
-    outline: none;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    color: #cd96ff;
-    background: transparent;
-}
-
-.contact input:focus {
-    outline: 3px solid #cd96ff;
-    color: #cd96ff;
-    border: none;
-}
-
-.contact textarea {
-    outline: none;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    background: transparent;
-    height: 5rem;
-    color: #cd96ff;
-    resize: none;
-}
-
-.contact textarea:focus {
-    outline: 3px solid #cd96ff;
-    color: #cd96ff;
-    border: none;
-}
-
-.contentCC {
-    flex: 1.8;
-    display: flex;
-    align-items: center;
-    /* padding-left: 3rem; */
-}
-
-.contact {
-    flex-direction: column;
-    flex: 2;
-    display: flex;
-    padding-right: 3rem;
-}
-
-.bton {
-    text-align: center;
-}
-
-.button {
-    /* padding: 1rem; */
-    text-align: center;
-    width: 6.5rem;
-    height: 2.5rem;
-    background-color: #cd96ff;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.newBtn {
-    width: 10.5rem;
-    height: 3rem;
-    font-size: 1.4rem;
-
-}
-
-.button:hover {
-    background: transparent;
-    border: 2px solid #ff9595;
-    color: #ff9595;
-    transition: 0.5s ease-in-out;
-    cursor: grab;
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-
-}
-
-.mail {
-    color: #cd96ff;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: #cd96ff!important;
-    transition: 0.3s ease-in-out!important;
-}
-
-@media (max-width: 950px) {
-    .inline {
-        flex-direction: column;
-    }
-
-    .inline input {
-        width: 70%;
-        height: 3rem;
-    }
-
-    .inline button {
-        height: 2.7rem;
-        font-size: 1.2rem;
-        width: 140px;
-        margin-top: 10px;
-    }
-
-    .servicCard {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contentCC {
-        text-align: center;
-        margin-bottom: 3rem;
-        display: inline;
-        margin-left: 0rem;
-    }
-
-    .midCont {
-        flex-direction: column;
-    }
-
-    .contact {
-        padding-right: 0rem;
-    }
-
-    .contentS {
-        width: 100%;
-        text-align: center;
-        margin-top: 2rem;
-    }
-
-    .fadUp>div {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-}
-
-@media(max-width:700px) {
-    .servicCard img {
-        width: 220px;
-        height: 220px;
-    }
-
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
